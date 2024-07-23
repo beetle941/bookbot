@@ -16,6 +16,9 @@ def main():
         sorted_letters = sorted(Letters.items(), key=lambda item: item[1], reverse=True)
         print("--- Begin report of books/frankenstein.txt ---")
         print(f"{number_of_words} words found in the document")
+        for letter, count in sorted_letters:
+            print(f"the '{letter}' character was found {count} times")
+        print("--- end report ---")
         
 
 
